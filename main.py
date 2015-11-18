@@ -19,7 +19,7 @@ def main(args):
     # read the configuration from env vars
     app.conf = {
         'DB_HOST': os.environ.get('DB_HOST', 'localhost'),
-        'DB_NAME': os.environ.get('DB_NAME', 'edu'),
+        'DB_NAME': os.environ.get('DB_NAME', 'elearning'),
         'DB_USER': os.environ.get('DB_USER', 'edu'),
         'DB_PASS': os.environ.get('DB_PASS', 'edu'),
         'DB_PORT': os.environ.get('DB_PORT')

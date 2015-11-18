@@ -48,7 +48,7 @@ def authenticated(method):
             # fetch the passkey from the database
 
 
-            user = self.db.get("SELECT * FROM users WHERE email=%s", email)
+            user = self.db.get("SELECT * FROM Users WHERE email=%s", email)
             if not user:
                 self.write_error(status_code=401, exc_info="invalid email")
                 self.finish()
